@@ -5,74 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Collecting Crystal</title>
+    
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
    
 </head>
+
+
 <body>
-    <div class="container">
+        <embed autoplay height="0" width="0" src="assets/images/greatestShow.mp3"></embed>
+    
+<div class="container">
 
-        <div class="row"></div>
-
-        <h1 id="title">Crystals Collector!</h1>
-
-        <p id ="text">
-
-            <h1 id="title">Instructions:</h1>
-            <br>
-            <br>
-            You will be given a random number at the start of the game
-
-            <br>
-            <br>
-
-            There are four crystals below. By clicking on a crystal you 
-            will add a specific amount of points to your total score.
-
-            <br>
-            <br>
-
-            You win the game by macthing your total score to random number, 
-            you lose the game if your total score goes above the random number.
-
-            <br>
-            <br>
-
-            The value of each crystal in hidden from you until you click on it
-
-            <br>
-            <br>
-
-            Each time when the game starts, the game will change 
-            the value of each crystal.
-
-             </p>
-
-             <h1 id="title">Wins: 
+    <h1 id="title">Crystals Collector!</h1>
+    <br>
+    <br>
+    <div class="row">
+        <p id="message">You will be given a random number
+                at the start of the game.
                 <br>
-                Losses:
-             </h1>
+                There are four crystals below. By clicking on a crystal 
+                you will add a specific amount of points to your total score.
+                <br>
+                You wil the game by matching your total score to random number, 
+                you lose the game if your total score goes above the random number.
+                <br>
+                The value of each crystal is hidden from you until you click on it.
+                <br>
+                Each time when the game starts, the game will change the values
+                of each crystal.
 
-             <h1 id="title">Number to match: </h1>
+</p>
+    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 id="g">Goal: <span class="goal"></span>  </h2>
 
-             <h1 id="title">Crystals to choose:</h1>
-             <br>
-             <img src="" alt="">
-             <img src="" alt="">
-             <img src="" alt="">
-             <img src="" alt="">
+            </div>
 
-             <h1 id="title">Your Toatal score is: </h1> 
+            <div class="col-md-6">
+                <h2 id="t">Total: <span class="total"></span>  </h2>
+            </div>
+           
+        </div>
+        <div class="row crystalRow"></div>
 
+        <br>
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                    <h6 id="win">Wins: <span class="win"></span>  </h6>
+                    
+            </div>
+
+            <div class="col-sm-6">
+                    <h5 id="lost">Losses: <span class="lost"></span>  </h5>
+ 
+            </div>
 
         </div>
 
-
     </div>
 
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+
+    <!--
+        <div class="container">
+        <h1 id="title">Crystals Collector!</h1>
+
+
+        <div class="row">
+
+                <div class="col-sm-4">
+                    <p id="instruction">You will be given a random number
+                        at the start of the game.
+                        <br>
+                        <br>
+                        There are four crystals below. By clicking on a crystal 
+                        you will add a specific amount of points to your total score.
+                        <br>
+                        <br>
+                        You wil the game by matching your total score to random number, 
+                        you lose the game if your total score goes above the random number.
+                        <br>
+                        <br>
+                        The value of each crystal is hidden from you until you click on it.
+                        <br>
+                        Each time when the game starts, the game will change the values
+                        of each crystal.
+
+
+                    </p>
+                </div> 
+                
+                <div class="col-sm-4">
+                        <div class="pic"> <img src="assets/images/Bear.jpg" alt="bear" style="width:53%"></div>
+                        <div class="pic"> <img src="assets/images/puppy.jpg" alt="puppy" style="width:53%"></div> 
+                        <div class="pic"> <img src="assets/images/rabbit.jpg" alt="rabbit" style="width:53%"></div>
+                        <div class="pic"> <img src="assets/images/squirrel.jpg" alt="squirrel" style="width:55%"></div>   
+
+                </div>
+
+                <div class="col-sm-4">
+                        <h4 id="target">Target scores : <span class="target"></span></h4>
+                        <br>
+                        <br>
+                        <br>
+                        <h4 id="total">Your total scores: <span class="total"></span></h4>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <h3 id="wins">Wins: </h3>
+                        <br>
+                        <br>
+                        <h2 id="losses">Losses: </h2>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+ -->
+
+    
+ <script
+ src="https://code.jquery.com/jquery-3.3.1.js"
+ integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+ crossorigin="anonymous"></script>
+
+    
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
    
-    
 </body>
 </html>
